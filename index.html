@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Hotline</title>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-blue-300 min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <img src="./assets/logo.png" alt="Logo" class="w-8 h-8">
+      <span class="font-bold text-sm text-green-900">Emargency <br> Service</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <span class="flex items-center gap-1">
+         <img src="./assets/heart.png" alt="heart" class="w-5 h-5">
+         <span id="heartCount">0</span></span>
+      <span>Coins: <span id="coinCount">100</span></span>
+     <span>Copies: <span id="copyCount">0</span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center py-12 text-center bg-green-800">
+    <img src="./assets/logo-dark.png" alt="Hero Logo" class="w-20 h-20 mb-4">
+    <h1 class="text-3xl font-bold text-white">Emergency Service Directory</h1>
+    <p class="text-lg mt-2 italic text-white">"Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh"</p>
+  </section>
+
+  <!-- Main Section -->
+  <main class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 flex-1">
+
+    <!-- Card Section -->
+    <section class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="cardSection">
+      <!-- Cards will be inserted by JS -->
+    </section>
+
+    <!-- History Section -->
+    <section class="bg-white rounded-lg shadow p-4">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold flex items-center gap-2"><i class="fas fa-history"></i> Call History</h2>
+        <button id="clearHistory" class="text-sm text-red-500 hover:underline">Clear History</button>
+      </div>
+      <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
+    </section>
+  </main>
+</body>
+</html>
