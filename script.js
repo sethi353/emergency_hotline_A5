@@ -12,7 +12,7 @@ const clearHistoryBtn = document.getElementById("clearHistory");
 // Sample services
 const services = [
   { id: 1, name: "National Emergency Number", nameEn: "National Emergency", number: "999", category: "Emergency", icon: "./assets/emergency.png" },
-  { id: 2, name: "Ambulance", nameEn: "Ambulance", number: "102", category: "Emergency", icon: "icons/ambulance.png" },
+  { id: 2, name: "Police Helpline Number", nameEn: "Police", number: "999", category: "Emergency", icon: "./assets/police.png" },
   { id: 3, name: "Police", nameEn: "Police", number: "999", category: "Emergency", icon: "icons/police.png" },
   { id: 4, name: "Gas Help", nameEn: "Gas", number: "104", category: "Utility", icon: "icons/gas.png" },
   { id: 5, name: "Electricity", nameEn: "Electric", number: "105", category: "Utility", icon: "icons/electric.png" },
