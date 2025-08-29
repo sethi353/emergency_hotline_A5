@@ -16,7 +16,7 @@ const services = [
   { id: 3, name: "Fire Service Number", nameEn: "Fire Service", number: "999", category: "Emergency", icon: "./assets/fire-service.png" },
   { id: 4, name: "Ambulance Service", nameEn: "Ambulance", number: "1994-9999999", category: "Emergency", icon: "./assets/ambulance.png" },
   { id: 5, name: "Woman & Child Helpline", nameEn: "woman & child", number: "109", category: "Emergency", icon: "./assets/emergency.png" },
-  { id: 6, name: "Water Help", nameEn: "Water", number: "106", category: "Utility", icon: "icons/water.png" },
+  { id: 6, name: "Anti-Corruptin Helpline", nameEn: "Anti-Corruption", number: "106", category: "Emergency", icon: "./assets/emergency.png" },
 ];
 
 // Render service cards
@@ -32,11 +32,11 @@ services.forEach(service => {
     <p class="text-md font-bold">${service.number}</p>
     <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded text-xs">${service.category}</span>
     <button class="heart-btn">
-      <img src="icons/heart.png" alt="heart" class="w-6 h-6">
+      <img src="./assets/heart.png" alt="heart" class="w-6 h-6">
     </button>
     <div class="flex gap-2 mt-2">
-      <button class="copy-btn bg-blue-500 text-white px-3 py-1 rounded">Copy</button>
-      <button class="call-btn flex items-center gap-2 bg-green-500 text-white px-3 py-1 rounded">
+      <button class="copy-btn bg-blue-500 text-white px-3 py-1 rounded w-[120px]"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="call-btn flex items-center gap-2 bg-green-500 text-white px-3 py-1 rounded w-[120px]">
         <i class="fas fa-phone"></i> Call
       </button>
     </div>
