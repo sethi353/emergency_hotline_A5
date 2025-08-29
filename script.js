@@ -9,7 +9,7 @@ const heartCount = document.getElementById("heartCount");
 const historyList = document.getElementById("historyList");
 const clearHistoryBtn = document.getElementById("clearHistory");
 
-// Sample services
+//  services
 const services = [
   { id: 1, name: "National Emergency Number", nameEn: "National Emergency", number: "999", category: "Emergency", icon: "./assets/emergency.png" },
   { id: 2, name: "Police Helpline Number", nameEn: "Police", number: "100", category: "Emergency", icon: "./assets/police.png" },
